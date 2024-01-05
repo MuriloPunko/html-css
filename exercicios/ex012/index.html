@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>este video esta hospedado no meu proprio servidor</p>
+   <!-- <video src="midia/all-my-fellas-cat.mp4" width="250"  controls></video>  jeito simples-->
+
+   <video  poster="imagens/all-fellas.png" width="400" height="600" controls>  
+
+        <source src="midia/all-my-fellas-cat.mp4" type="video/mp4"> <!--ordem influencia na hora de escolher o arquivo (mp4, m4v etc...)-->
+       <!-- <source src="midia/all-my-fellas-cat.m4v" type="mp4">
+        <source src="midia/all-my-fellas-cat.webm" type="webm"> -->
+
+        <p>seu navegador não tem compatibilidade com reprodução de videos</p>
+
+        
+
+   </video>
+
+   <h1>Inserindo videos do youtube</h1>
+
+        <iframe width="400" height="600" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=y1ymthuSLAHH5QAv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h1>inserindo videos do vimeo</h1>
+
+       <iframe src="https://player.vimeo.com/video/674480678?h=fee958d965" width="640" height="268" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

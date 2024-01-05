@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture> <!--recebe uma imagem e o navegador escolhe automaticamente a melhor versão com base no dispositivo-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5.</p>
+   <!-- <audio src="midia/all-my-fellas.mp3" controls ></audio>  || um dos jeitos de adicionar arquivos de audio !-->
+
+    <!-- MP3 WAV OGG    são os tipos de arquivos de audio, nem todos navegadores aceitam MP3-->
+
+    <audio preload="metadata" controls> <!-- auto(ele so considera que o site terminou de carregar, depois q o audio tambem for carregado | metadata (carrega algumas coisas, como o nome do arquivo, duração ... | none (não carrega nada)))-->
+
+        <!--Controls mostra o controlador com o play e tempo-->
+
+
+        <source src="midia/all-my-fellas.mp3" type="audio/mpeg">
+        <!--<source src="midia/all-my-fellas.wav" type="audio/wav"> !--> 
+
+        <p>infelizmente seu navegador não consegue reproduzir o audio. <a href="midia/all-my-fellas.mp3">clique aqui</a> para baixar o arquivo .MP3</p>
+    </audio>
+    
+</body>
+</html>

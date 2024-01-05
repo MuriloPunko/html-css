@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <!-- : é para PseudoClasses e
+        :: é para PseudoElementos-->
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a{
+            color: #69AFEF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: #37468A;
+        }
+
+        a:hover{
+            color: #F09700;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: #332F29;
+        }
+
+        .especial::before{
+            content: "⇒ ";
+
+        }
+
+        .especial::after{
+            content: /*"[link]"*/ " ⇐";
+            /* text-decoration: none;
+            font-weight: normal;
+            color: darkgray; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://twitter.com/SakariNoSaga" target="_blank" rel="external" class="especial">Meu twitter</a></li>
+        <li><a href="https://animeshouse.net" target="_blank" rel="external">Veja animes aqui</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=25" target="_blank" rel="external">Video do guanabara</a></li>
+    </ul>
+    
+</body>
+</html>

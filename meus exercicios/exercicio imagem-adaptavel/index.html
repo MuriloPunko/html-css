@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando imagens adaptaveis</title>
+</head>
+<body>
+
+    <h1>aumente e diminua a tela para ver a imagem mudar</h1>
+    <p>a imagem pequena sera a schierke, a media o guts e a grande o grafite</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem-pequena300.jpg" type="image/jpg">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-media700.jpg" type="image/jpg">
+        <img src="imagens/imagem-grande1000.jpg" alt="imagem grande do grafite">
+    </picture>
+    
+</body>
+</html>
