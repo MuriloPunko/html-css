@@ -1,0 +1,84 @@
+@charset "UTF8";
+
+@font-face{
+    font-family: "cinzel";
+    src: url(fontes/Cinzel-VariableFont_wght.ttf) format(truetype);
+    font-weight: bold;
+}
+
+*{
+margin: 0px;
+padding: 0px;
+font-size: 1em;
+font-family: "cinzel";
+
+}
+
+.pimg{
+    color: white;
+}
+
+.imagem{
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover; 
+
+}
+
+#img1{
+background-image: url(imagens/img1.jpg);
+background-position: bottom;
+/*Jiwen artista*/
+}
+
+#img2{
+background-image: url(imagens/img2.jpg);
+background-position: center;
+}
+
+
+
+
+header{
+background-color: black;
+height: 250px;
+
+}
+
+header > h1{
+font-size: 2em;
+padding-top: 100px;
+color: white;
+text-align: center;
+}
+
+header > p{
+font-size: 1.25em;
+color: white;
+text-align: center;
+}
+
+section{
+padding-top: 10vw;
+padding-bottom: 10vw;
+padding-left: 30px;
+line-height: 2em;
+font-size: 3em;
+}
+
+section > p{
+padding-bottom: 80px ;
+}
+
+.padrao{
+font-size: 2.5em;
+font-weight: bold;
+line-height: 2em;
+padding-bottom: 2vw;
+}
+
+.imagem{
+font-size: 2.5em;
+font-weight: bold;
+line-height: 2em;
+}
