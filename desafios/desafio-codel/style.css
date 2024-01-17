@@ -23,7 +23,7 @@ font-family: "cinzel";
 .pimg{
     color: white;
     background-color: rgb(0 0 0 / 59%);
-    margin-right: 39vw;
+    margin-right: 30vw;
     padding-bottom: 0px;
     
 }
@@ -105,14 +105,19 @@ footer{
 footer > p {
     text-align: center;
     font-size: 1.2vw;
+    padding: 7px 7px 7px 7px;
     
 }
 
 .externo{
     font-size: 1.2vw;
     color: white;
+    text-decoration: none;
 }
 
-/*falta so terminar o footer*/
+.externo:hover{
+    text-decoration: underline;
+}
+
 
 
